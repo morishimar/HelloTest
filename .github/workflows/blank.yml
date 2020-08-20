@@ -20,6 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Run a multi-line script
+      env: 
+        CONTEXT: ${{ github.context }}
       run: |
-        echo ${{ github.event.pull_request}}
-        echo ${{ github.event.pull_request.refs.head}}
+        echo $CONTEXT
+        echo ${{ github.event.name }}
+        echo ${{ github.event.pull_request.head.ref  }}
