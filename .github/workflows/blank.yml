@@ -23,6 +23,6 @@ jobs:
       env: 
         CONTEXT: ${{ github.context }}
       run: |
-        echo $CONTEXT
-        echo ${{ github.event_name }}
-        echo ${{ github.event.pull_request.head.ref  }}
+        echo "first
+        second
+        third"
