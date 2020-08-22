@@ -25,4 +25,5 @@ jobs:
       run: |
         echo "first
         second
-        third"
+        third" >> test.txt
+        cat test.txt
