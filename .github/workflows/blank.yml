@@ -23,16 +23,12 @@ jobs:
       env: 
         CONTEXT: ${{ github.context }}
       run: |
-        echo "
-        first
+        echo "first
         second
-        third
-        " >> test.txt
+        third" >> test.txt
         cat test.txt
 
-        echo "
-        fourth
+        echo "fourth
         fifth
-        sixth
-        " >> test.txt
+        sixth" >> test.txt
         cat test.txt
